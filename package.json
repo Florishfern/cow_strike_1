@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "cow_strike_1"
+    "url": "https://github.com/Florishfern/cow_strike_1"
   },
   "license": "ISC",
   "author": "",
@@ -12,5 +12,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
