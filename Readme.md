@@ -5,7 +5,7 @@ Software that calculates milk production for each color of cow.
 
 ## Tech Stack
 
-- Backend : Node.js
+- __Backend__ : Node.js
 - Frontend : EJS, HTML, CSS
 - Web Service : Express.js
 - Database : MySQL
