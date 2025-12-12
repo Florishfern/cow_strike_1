@@ -6,10 +6,10 @@ Software that calculates milk production for each color of cow.
 ## Tech Stack
 
 - __Backend__ : Node.js
-- Frontend : EJS, HTML, CSS
-- Web Service : Express.js
-- Database : MySQL
-- Tools : Postman
+- __Frontend__ : EJS, HTML, CSS
+- __Web Service__ : Express.js
+- __Database__ : MySQL
+- __Tools__ : Postman
 
 
 ## Project Structure
