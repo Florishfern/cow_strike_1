@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ผลการผลิตนม</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container success-bg">
+        <h1>ผลการผลิตสำเร็จ</h1>
+        
+        <div class="result-box">
+            <p><strong>รหัสวัว:</strong> <%= cow.id %></p>
+            <p><strong>สี:</strong> <%= cow.color %></p>
+            <p><strong>อายุ:</strong> <%= cow.ageYears %> ปี <%= cow.ageMonths %> เดือน</p>
+            <hr>
+            <h2>ผลิตได้: <%= milkResult.milkType %></h2>
+            <h1 class="amount"><%= milkResult.amount %> ลิตร</h1>
+        </div>
+
+        <a href="/" class="btn-back">กลับไปหน้าค้นหา</a>
+    </div>
+</body>
+</html>

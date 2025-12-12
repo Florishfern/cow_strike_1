@@ -1,0 +1,8 @@
+create database cow_strike_1;
+
+create table cows(
+    cow_id INT primary key auto_increment,
+    color enum('white','brown','pink') NOT NULL,
+    age_year INT,
+    age_month INT
+);

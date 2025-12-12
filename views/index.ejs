@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ระบบตรวจสอบหัวรีดนมวัว (Cow Strike)</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ตรวจสอบหัวรีดนมวัว</h1>
+        
+        <% if (error) { %>
+            <div class="alert error"><%= error %></div>
+        <% } %>
+
+        <form action="/check-milk" method="POST" class="form-group">
+            <label for="cowId">กรอกรหัสวัว (8 หลัก):</label>
+            <input type="text" id="cowId" name="cowId" maxlength="8" required placeholder="เช่น 10000001">
+            <button type="submit">ตรวจสอบและผลิตนม</button>
+        </form>
+
+        <div class="report-card">
+            <h3>ยอดการผลิตรวมทั้งหมด</h3>
+            <ul>
+                <li>นมจืด: <%= totalProduction.plain %> ลิตร</li>
+                <li>นมช็อกโกแลต: <%= totalProduction.chocolate %> ลิตร</li>
+                <li>นมสตรอว์เบอร์รี่: <%= totalProduction.strawberry %> ลิตร</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
