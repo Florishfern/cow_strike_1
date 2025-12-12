@@ -9,7 +9,7 @@ Software that calculates milk production for each color of cow.
 - Frontend : EJS, HTML, CSS
 - Web Service : Express.js
 - Database : MySQL
-- Testing : Postman
+- Tools : Postman
 
 
 ## Project Structure
