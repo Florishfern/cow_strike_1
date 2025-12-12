@@ -46,6 +46,7 @@ exports.calculateMilk = async (req, res) => {
         };
 
         res.render('result', { cow: cowDataForView, milkResult });
+        // return res.json({ cow: cowDataForView, milkResult });
 
     } catch (err) {
         console.log(err);
