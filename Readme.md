@@ -1,14 +1,36 @@
-cow-strike-exam/
-├── .env                  # เก็บค่า config เช่น Port
-├── package.json
-├── server.js             # จุดเริ่มต้นโปรแกรม
-├── models/
-│   └── cowModel.js       # จัดการข้อมูลวัวและการคำนวณน้ำนม
+# Cow Strike 1
+
+
+Software that calculates milk production for each color of cow.
+
+## Tech Stack
+
+- Backend : Node.js
+- Frontend : EJS, HTML, CSS
+- Web Service : Express.js
+- Database : MySQL
+- Testing : Postman
+
+
+## Project Structure
+
+```
+cow_strike_1/
+├── config/
+│   └── db.js     
 ├── controllers/
-│   └── cowController.js  # รับค่าจาก View ส่งให้ Model และตอบกลับ
+│   ├── cowController.js  
+├── models/
+│   ├── cowModel.js        
+├── public/
+│   ├── css/
+│       ├── style.css
 ├── views/
-│   ├── index.ejs         # หน้าจอรับรหัส (HTML)
-│   └── result.ejs        # หน้าจอแสดงผล (HTML)
-└── public/
-    └── css/
-        └── style.css     # ตกแต่งหน้าจอ
+│   ├── index.ejs
+│   └── result.ejs
+├── DDL.txt
+├── DML.txt     
+├── README.md               
+└── server.js            
+```
+
