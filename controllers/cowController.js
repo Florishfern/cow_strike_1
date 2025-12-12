@@ -33,9 +33,9 @@ exports.calculateMilk = async (req, res) => {
 
         const milkResult = CowModel.calculateMilk(cow);
 
-        if (cow.color === 'White') totalProduction.plain += milkResult.amount;
-        else if (cow.color === 'Brown') totalProduction.chocolate += milkResult.amount;
-        else if (cow.color === 'Pink') totalProduction.strawberry += milkResult.amount;
+        if (cow.color === 'white') totalProduction.plain += milkResult.amount;
+        else if (cow.color === 'brown') totalProduction.chocolate += milkResult.amount;
+        else if (cow.color === 'pink') totalProduction.strawberry += milkResult.amount;
 
         // เตรียมข้อมูลส่งกลับ View (แปลง snake_case จาก DB เป็น camelCase)
         const cowDataForView = {
